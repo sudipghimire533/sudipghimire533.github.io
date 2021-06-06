@@ -34,13 +34,14 @@
                 
                 <div class='nav_item_container'>
                     <ul class='nav_item_list'>
-                        <li class='nav_item active'><a href='#about'>About Me</a></li>
-                        <li class='nav_item'><a href='#skills'>My Skills</a></li>
-                        <li class='nav_item'><a href='#work'>Work Log</a></li>
-                        <li class='nav_item'><a href='#service'>Services</a></li>
-                        <li class='nav_item'><a href='#education'>Education</a></li>
-                        <li class='nav_item'><a href='#contact'>Contact me</a></li>
-                    </ul>
+                        <li class='nav_item active internal'><a href='#about'>About Me</a></li>
+                        <li class='nav_item internal'><a href='#skills'>My Skills</a></li>
+                        <li class='nav_item internal'><a href='#work'>Work Log</a></li>
+                        <li class='nav_item internal'><a href='#service'>Services</a></li>
+                        <li class='nav_item'><a href='/'>My blogs</a></li>
+                        <li class='nav_item internal'><a href='#education'>Education</a></li>
+                        <li class='nav_item interbal'><a href='#contact'>Contact me</a></li>
+                   </ul>
                 </div>
                 
                 <div class='social_links'>
@@ -413,7 +414,7 @@
         /* end slide home covers */
 
         /* smooth scrolling on navgation */
-        document.querySelectorAll('.nav_item a').forEach(element => {
+        document.querySelectorAll('.nav_item.internal a').forEach(element => {
             element.addEventListener('click', event => {
                 event.preventDefault();
                 let target = document.getElementById(event.target.getAttribute('href').slice(1)).offsetTop - body.scrollTop;

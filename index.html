@@ -38,15 +38,15 @@
                         <li class='nav_item internal'><a href='#skills'>My Skills</a></li>
                         <li class='nav_item internal'><a href='#work'>Work Log</a></li>
                         <li class='nav_item internal'><a href='#service'>Services</a></li>
-                        <li class='nav_item'><a href='https://www.sudipg.com.np'>My blogs</a></li>
+                        <li class='nav_item'><a href='https://www.sudipg.com.np/en/'>My blogs</a></li>
                         <li class='nav_item internal'><a href='#education'>Education</a></li>
                         <li class='nav_item interbal'><a href='#contact'>Contact me</a></li>
                    </ul>
                 </div>
                 
                 <div class='social_links'>
-                    <a href='https://www.facebook.com/sudip.ghimire.533/' target='_blank' class='social icon-facebook-rect'></a>
-                    <a href='#' class='social icon-twitter'></a>
+                    <a href='https://facebook.com/sudip.ghimire.533/' target='_blank' class='social icon-facebook-rect'></a>
+                    <a href='https://twitter.com/@sudipghimire533' class='social icon-twitter'></a>
                     <a href='https://gitlab.com/sudipghimire533' target='_blank' class='social icon-gitlab'></a>
                     <a href='https://stackoverflow.com/users/10084485/sudip-ghimire' target='_blank' class='social icon-stackoverflow'></a>
                     <a href='#' class='social icon-paypal'></a>
@@ -276,6 +276,12 @@
             <section class='row'>
                 <h2 class='major'>Education</h2>
                 <div class='edu-showcase'>
+                    <div class='edu active' style='display: none'>
+                        <div class='edu'>
+                            <h3 class='edu-title'><i class='icon-dummy'></i></h3>
+                            <h4 class='description'></h4>
+                        </div>
+                    </div>
                     <div class='edu active'>
                         <h3 class='edu-title' data-name='Higher Education'>School Education <i class='icon-dummy'></i></h3>
                         <h4 class='description'>
@@ -372,8 +378,8 @@
             });
             element.classList.remove('active');
         });
-        document.getElementsByClassName('edu')[2].classList.add('active');
-        last_active_edu = document.getElementsByClassName('edu')[1];
+        document.getElementsByClassName('edu')[0].classList.add('active');
+        last_active_edu = document.getElementsByClassName('edu')[0];
         /* end educaton secton toggle*/
 
         /* sidebar toggler */

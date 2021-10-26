@@ -196,73 +196,6 @@ body{
     height: 100vh;
     overflow: auto;
 }
-
-.skill-showcase{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.bar-item{
-    position: relative;
-    display: inline-block;
-    flex-basis: 100%;
-    min-width: 200px;
-    max-width: 350px;
-    margin: 10px;
-}
-.bar-item:before{
-    content: attr(data-label);
-}
-.bar-item:after{
-    right: 0;
-    top: 0;
-    position: absolute;
-    content: attr(data-score);
-}
-.bar{
-    width: 100%;
-    height: 5px;
-    margin-top: 5px;
-    background: #BBB;
-    /* border: 10px solid var(--s2); */
-    position: absolute;
-    display: block;
-    position: relative;
-    border-radius: 20px;
-}
-.bar{
-    overflow: hidden;
-}
-.fill{
-    max-width: 0;
-    transition: 2s;
-    transition-delay: .5s;
-}
-.skill-showcase.visible .bar{
-    overflow: visible;
-}
-.skill-showcase.visible .fill{
-    max-width: 100%;
-}
-.fill{
-    background: var(--color);
-    position: absolute;
-    height: 100%;
-    border-radius: inherit;
-    left: 0;
-}
-.fill:after{
-    content: '';
-    right: 0;
-    position: absolute;
-    height: 100%;
-    width: 5px;
-    background: var(--color);
-    border-radius: 50%;
-    transform: scale(1.8);
-}
 .row{
     margin: 100px 0;
 }
@@ -277,6 +210,34 @@ body{
     word-spacing: 3px
 }
 
+.skill {
+    display: inline-flex;
+    border-radius: 10px;
+    background: linear-gradient(to top, var(--blue-light) 0%,
+                            var(--pink) 100%), radial-gradient(circle at top left,
+                            var(--yellow), var(--blue-dark));;
+    flex-direction: column;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    transform: scale(0.2);
+    filter: grayscale(0.7);
+    transition-property: transform, filter;
+    transition-duration: 0.3s;
+}
+.skill:hover,
+.skill:focus {
+    filter: grayscale(0.2);
+}
+.skill-showcase.visible .skill{
+    transform: none;
+}
+.skill-info {
+    font-size: calc( var(--font-primary)  * 1.1);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 .exp-showcase{
     position: relative;
     display: inline-block;
@@ -603,7 +564,6 @@ textarea.cont_inp{
     display: inline-block;
     height: 100vh;
     max-height: 750px;
-    height: 100vh;
     min-height: 450px;
     display: block;
     background: transparent;

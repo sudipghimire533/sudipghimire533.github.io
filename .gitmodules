@@ -1,0 +1,3 @@
+[submodule "themes/zola-portfolio"]
+	path = themes/zola-portfolio
+	url = https://github.com/sudipghimire533/zola-portfolio

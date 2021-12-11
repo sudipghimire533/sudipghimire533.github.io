@@ -1,0 +1,21 @@
+on: push
+name: Build and deploy GH Pages
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Install minify
+        run: |
+          sudo apt update
+          sudo apt install minify
+
+      - name: build_and_deploy
+        uses: shalzz/zola-deploy-action@v0.14.1
+        env:
+          # Target branch
+          PAGES_BRANCH: gh-pages
+          # Provide personal access token
+          TOKEN: ${{ secrets.TOKEN }}

@@ -24,6 +24,7 @@ jobs:
           ./themes/zola-portfolio/post_build.sh $ZOLA_BUILD_DIR
 
       - name: Minify site
+        if: false
         run: |
           sudo apt update
           sudo apt install minify

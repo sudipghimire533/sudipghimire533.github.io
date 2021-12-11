@@ -20,7 +20,8 @@ jobs:
 
       - name: Run theme post_build action
         run: |
-          bash themes/zola-portfolio/post_build.sh $ZOLA_BUILD_DIR
+          chmox + ./themes/zola-portfolio/post_build.sh
+          ./themes/zola-portfolio/post_build.sh $ZOLA_BUILD_DIR
 
       - name: Minify site
         run: |

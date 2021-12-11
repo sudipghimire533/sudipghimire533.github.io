@@ -3,6 +3,10 @@ name: Build and deploy GH Pages
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    env:
+      ZOLA_BUILD_DIR: 'public
+        '
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -12,10 +16,28 @@ jobs:
           sudo apt update
           sudo apt install minify
 
-      - name: build_and_deploy
-        uses: shalzz/zola-deploy-action@v0.14.1
-        env:
-          # Target branch
-          PAGES_BRANCH: gh-pages
-          # Provide personal access token
-          TOKEN: ${{ secrets.TOKEN }}
+      - name: Build site
+        run: |
+          zola build -o $ZOLA_BUILD_DIR
+
+      - name: Run theme post_build action
+        run: |
+          bash themes/zola-portfolio/post_build.sh $ZOLA_BUILD_DIR
+
+      - name: Minify site
+        run: |
+          apt update
+          apt install minify
+          minify -r -v public/ -o public/
+
+      - name: Commit minified changes
+        run: |
+          git config --local user.email "github-bot@noreply.github.com"
+          git config --local user.name "Github Action"
+          git commit -m "Minify output" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'gh-pages'

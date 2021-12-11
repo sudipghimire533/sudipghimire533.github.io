@@ -13,7 +13,7 @@ jobs:
 
       - name: Build site
         run: |
-          snap install zola --edge
+          sudo snap install zola --edge
           zola build -o $ZOLA_BUILD_DIR
 
       - name: Run theme post_build action
@@ -22,8 +22,8 @@ jobs:
 
       - name: Minify site
         run: |
-          apt update
-          apt install minify
+          sudo apt update
+          sudo apt install minify
           minify -r -v public/ -o public/
 
       - name: Commit minified changes

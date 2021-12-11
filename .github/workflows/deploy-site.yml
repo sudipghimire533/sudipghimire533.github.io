@@ -26,17 +26,10 @@ jobs:
         run: |
           sudo apt update
           sudo apt install minify
-          minify -r -v public/ -o public/
-
-      - name: Commit minified changes
-        run: |
-          git config --local user.email "github-bot@noreply.github.com"
-          git config --local user.name "Github Action"
-          git add public/ -f
-          git commit -m "Minify output"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'gh-pages'
+          minify -r -v $ZOLA_BUILD_DIR -o $ZOLA_BUILD_DIR
+          
+          - name: Deploy
+            uses: peaceiris/actions-gh-pages@v3
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ./public

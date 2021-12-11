@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://me.sudipg.com.np/sitemap.xml

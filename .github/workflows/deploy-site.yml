@@ -30,8 +30,8 @@ jobs:
           sudo apt install minify
           minify -r -v $ZOLA_BUILD_DIR -o $ZOLA_BUILD_DIR
           
-          - name: Deploy
-            uses: peaceiris/actions-gh-pages@v3
-            with:
-              github_token: ${{ secrets.GITHUB_TOKEN }}
-              publish_dir: ./public
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

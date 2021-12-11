@@ -11,13 +11,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: Install minify
-        run: |
-          sudo apt update
-          sudo apt install minify
-
       - name: Build site
         run: |
+          snap install zola --edge
           zola build -o $ZOLA_BUILD_DIR
 
       - name: Run theme post_build action

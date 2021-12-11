@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --local user.email "github-bot@noreply.github.com"
           git config --local user.name "Github Action"
-          git add public/
+          git add public/ -f
           git commit -m "Minify output"
 
       - name: Push changes

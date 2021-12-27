@@ -6,8 +6,19 @@ anchor_name = "education"
 cover = "/images/praying.png"
 
 [[extra.item]]
+name = "Rust/Blockchain Developer"
+duration = "Dec 2021 - present"
+info = [
+    "Develop blockchain node",
+    "Optimize rust codebase",
+    "Work with ICON and Ethereum",
+    "Git, Rust, Blockchain, Ethereum"
+]
+doc = "#"
+
+[[extra.item]]
 name = "Web developer Intern"
-duration = "Apr 2019- Nov 2019"
+duration = "Apr 2019 - Nov 2019"
 info = [
     "Codesastra pvt. ltd.",
     "Communicate, plan and develop in team",

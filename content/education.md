@@ -9,6 +9,7 @@ cover = "/images/praying.png"
 name = "Rust/Blockchain Developer"
 duration = "Dec 2021 - present"
 info = [
+    "iBriz.ai",
     "Develop blockchain node",
     "Optimize rust codebase",
     "Work with ICON and Ethereum",
@@ -51,7 +52,7 @@ doc = "/documents/doc-10.pdf"
 
 [[extra.item]]
 name = "Basic Level Education"
-duration = "2006-20017"
+duration = "2006-2017"
 info = [
         "Shanti Batika English School. Pokhara-32, Nepal"
     ]

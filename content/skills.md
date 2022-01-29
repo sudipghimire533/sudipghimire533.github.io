@@ -9,6 +9,10 @@ label = "Rust Programming"
 icon = "https://www.rust-lang.org/logos/rust-logo-blk.svg"
 
 [[extra.tool]]
+label = "Substrate framework"
+icon = "https://enfipy.gallerycdn.vsassets.io/extensions/enfipy/plugin-polkadot/0.1.7/1569420642071/Microsoft.VisualStudio.Services.Icons.Default"
+
+[[extra.tool]]
 label = "Debian Linux"
 icon = "https://www.debian.org/logos/openlogo.svg"
 

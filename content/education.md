@@ -6,14 +6,28 @@ anchor_name = "education"
 cover = "/images/praying.png"
 
 [[extra.item]]
+name = "Rust microservice backend developer"
+duration = "June 2022 - July 2022"
+info = [
+  "Felixworks",
+  "Migrate python backend code to rust microservice",
+  "Add unit tests to individual backend handler",
+  "Design and plan the api structure",
+  "Work on optimization to increase server responsiveness",
+  "Rust, python, git, issue-tracker, microservice",
+]
+doc = "#"
+
 name = "Rust/Blockchain Developer"
-duration = "Dec 2021 - present"
+duration = "Dec 2021 - July 2022"
 info = [
     "iBriz.ai",
-    "Develop blockchain node",
+    "Develop substrate-based blockchain node",
     "Optimize rust codebase",
-    "Work with ICON and Ethereum",
-    "Git, Rust, Blockchain, Ethereum"
+    "Work with signature verification with Ethereum bridging",
+    "Develop Airdrop, Crowdloan and similar custom pallets",
+    "Setup and join into kusama relay network",
+    "Rust, substrate, polkadot, blockchain"
 ]
 doc = "#"
 

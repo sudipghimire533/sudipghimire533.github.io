@@ -74,7 +74,9 @@ info = [
 doc = "/documents/doc-8.pdf"
 
 +++
+In 2018, I discovered my passion for IT while I was still in school. My teachers gave me a great foundation, but being a wanna-be tech genius, I taught myself how to program and build real things all by myself!
 
-I found my head start in IT field when I was at school in year 2018 and beside the strong foundational knowledge I recived from my school teachers, I tough myself to program and to build real things. I contunied my self learning after school, Joined intenships, Started freelancing, Done projects and I now see better things ahead of me.
+After school, I kept on learning and growing. I joined internships, started freelancing, and even took on some exciting projects. Now, I'm on my way to even bigger and better things.
 
-I would like to remember the hands that raised me, friends who kept me falling, family relatives who made it possible to keep myself going and everyone who prayed from me. I really feel blessed remembering you guys <i class='fas fa-heart text-pink-500'></i>
+But I couldn't have done it without my squad! Shoutout to my friends who have my back, my family who supports me, and everyone who sent some good vibes my way. You guys are my personal army of superheroes, and I feel so grateful for all of you! <i class='fas fa-heart text-pink-500'></i>
+

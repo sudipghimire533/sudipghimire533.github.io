@@ -5,11 +5,17 @@ title = "My dirty hands"
 anchor_name = "projects"
 
 [[extra.project]]
+name = "Datahighway Parachain"
+intro = "Datahighway: where IOT data meets blockchain. I worked on maintaining the blockchain and adding cool new features, all while using custom IOT hardware to collect valuable data. Plus, some crypto games on the side!"
+cover = "/images/projects/DHXNetworkToken.png"
+tags = ['rust', 'substrate', 'web3', 'blockchain', 'iot']
+
+[[extra.project]]
 name = "Ytui-music"
 intro = "Everyone loves music (I guess) and few love terminal too. For those few special people who would like to listen music from terminal with a pleasing tui and battery-included features"
 cover = "/images/projects/ytui-music.png"
 source = "https://www.github.com/sudipghimire533/ytui-music"
-tags = ['rust', 'tui', 'cli', 'yutube', 'music']
+tags = ['rust', 'tui', 'cli', 'youtube', 'music']
 
 [[extra.project]]
 name = "Primordial Shop"

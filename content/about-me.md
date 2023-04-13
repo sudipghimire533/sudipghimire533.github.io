@@ -4,7 +4,7 @@ title = "About me"
 [extra]
 anchor_name = "about"
 +++
-Hey there, welcome to my totally rad portfolio website! I'm Sudip Ghimire, and if you haven't heard of me yet, well... you will. I'm kind of a big deal in the Blockchain Development world. No biggie.
+Hey there, welcome to my totally rad portfolio website! I'm Sudip Ghimire, and if you haven't heard of me yet, well... you will. I'm kind of a big deal in the web-3.0 world. No biggie.
 
 When I'm not crushing it as a blockchain engineer (aka a professional wizard), I'm busy wielding my other superpowers - like writing, philosophizing, jamming out to music, and debating politics with my imaginary friends.
 

@@ -12,10 +12,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
+        run: |
+          git submodule init
+          git submodule update
+
+      - name: Install zola
+        run: sudo snap install zola
 
       - name: Build site
         run: |
-          sudo snap install zola --edge
           zola build -o $ZOLA_BUILD_DIR
 
       - name: Run theme post_build action

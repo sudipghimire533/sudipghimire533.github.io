@@ -4,14 +4,11 @@ title = "About me"
 [extra]
 anchor_name = "about"
 +++
-The name is Sudip Ghimire. I am currently living in Pokhara, Nepal. In early 2019, I was told machines are to programmed and I have been hitting keyboard ever since.
-In early days, I remember myself exploring everything from Game development, 3D modeling, web development to Cyber Security and what not.
-I belive in creating value.
+Hey there, welcome to my totally rad portfolio website! I'm Sudip Ghimire, and if you haven't heard of me yet, well... you will. I'm kind of a big deal in the Blockchain Development world. No biggie.
 
+When I'm not crushing it as a blockchain engineer (aka a professional wizard), I'm busy wielding my other superpowers - like writing, philosophizing, jamming out to music, and debating politics with my imaginary friends.
 
-If I am not wiriting about something random my mind pop me with, you will find me listening to music all the time.
-Beside those, I love reading blogs, watching fantasy and walking some great miles. And of course I do love watching people behaviour and reaction over several things.
+I made this website to show off my mad skills and connect with other like-minded, totally awesome people who share my passions. So if you're into music, tech, politics, writing, or philosophy (or just think I'm pretty cool), stick around and let's make some magic happen.
 
+But seriously, no haters allowed. Only cool kids need apply.
 
-Exploring open source have always been something that keeps me engaged and contributing to such great communities is even more pleasing.
-Do you know, how fun is it to just install and try new programs, learning about not-so-mature technologies or someone else's hobby project?

@@ -18,6 +18,7 @@ info = [
 ]
 doc = "#"
 
+[[extra.item]]
 name = "Rust/Blockchain Developer"
 duration = "Dec 2021 - July 2022"
 info = [

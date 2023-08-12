@@ -6,6 +6,18 @@ anchor_name = "education"
 cover = "/images/praying.png"
 
 [[extra.item]]
+name = "Blockchain Developer"
+duration = "July 2022 - July 2023"
+info = [
+    "MatchX GmbH",
+    "Design, developr and deploy substrate-based blockchain from scratch",
+    "Develop chain feature for staking and crowd-loan reward",
+    "Develop chirpstack-dependent backend to communicate with IOT devices",
+    "Experiment zero knowledge proff for zkEvm",
+    "Rust, docker, IOT, backend, substrate, blockchain"
+]
+
+[[extra.item]]
 name = "Rust microservice backend developer"
 duration = "June 2022 - July 2022"
 info = [

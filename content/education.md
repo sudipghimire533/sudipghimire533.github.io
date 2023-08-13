@@ -16,6 +16,7 @@ info = [
     "Experiment zero knowledge proff for zkEvm",
     "Rust, docker, IOT, backend, substrate, blockchain"
 ]
+doc = "#"
 
 [[extra.item]]
 name = "Rust microservice backend developer"
